@@ -11,7 +11,7 @@ const map = new mapboxgl.Map({
 
 map.on('load', () => {
 
-    map.addSource('touristattractions', {
+    map.addSource('map(5)', {
         type: 'geojson',
         data: 'https://raw.githubusercontent.com/muznamian/Web-map-3-/main/map(5).geojson'
     });})
