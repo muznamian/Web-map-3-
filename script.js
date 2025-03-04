@@ -22,7 +22,7 @@ map.on('load', () => {
         'type': 'circle',
         'source': 'map(5)',
         'paint': {
-            'circle-radius': 5,
+            'circle-radius': 4,
             'circle-color': '#FF0000'
         }
 
