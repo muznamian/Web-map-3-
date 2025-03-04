@@ -11,18 +11,18 @@ const map = new mapboxgl.Map({
 
 map.on('load', () => {
 
-    map.addSource('map(5)', {
+    map.addSource('touristattractions', {
         type: 'geojson',
-        data: 'https://raw.githubusercontent.com/muznamian/Web-map-3-/main/map(5).geojson'
+        data: 'https://raw.githubusercontent.com/muznamian/Web-map-3-/refs/heads/main/touristattractions.geojson'
     });})
 
      //  the above is geojson link and the code actions to plot the point in the map 
      map.addLayer({
         'id': 'location points',
         'type': 'circle',
-        'source': 'map(5)',
+        'source': 'touristattractions',
         'paint': {
-            'circle-radius': 4,
+            'circle-radius': 6,
             'circle-color': '#FF0000'
         }
 
