@@ -42,23 +42,23 @@ map.on('load', () => {
         // We can use explore console output using the Google devtool )
     
 // Add a pop-up on the click event for it to show on the map 
-// map.on('mouseenter', ''location-points', () => {
-//     map.getCanvas().style.cursor = 'pointer'; //Switch cursor to pointer when mouse is over location points layer
+ map.on('mouseenter', ''location-points', () => {
+map.getCanvas().style.cursor = 'pointer'; //Switch cursor to pointer when mouse is over location points layer
+ });
+
+map.on('mouseleave', '', () => {
+map.getCanvas().style.cursor = ''; //Switch cursor back when mouse leaves location points layer
+map.setFilter("location-points", ['==', ['get', 'PRUID'], '']); //Let thw filter reset the highlighted layer when mouse leaves feature
 // });
 
-// map.on('mouseleave', '', () => {
-//     map.getCanvas().style.cursor = ''; //Switch cursor back when mouse leaves location points layer
-//     map.setFilter("location-points", ['==', ['get', 'PRUID'], '']); //Let thw filter reset the highlighted layer when mouse leaves feature
-// });
 
-
-// map.on('click', ''location-points', (e) => {
-//     new mapboxgl.Popup() //Declare new popup object on each click
-//         .setLngLat(e.lngLat) //Use method to set coordinates of popup based on mouse click location
-//         .setHTML("<b>Province/Territory:</b> " + e.features[0].properties.PRENAME + "<br>" +
-//             "Population: " + e.features[0].properties.POP2021) //Use click event properties to write text for popup
-//         .addTo(map); //Show popup on map
-// });
+map.on('click', ''location-points', (e) => {
+new mapboxgl.Popup() //Declare new popup object on each click
+.setLngLat(e.lngLat) //Use method to set coordinates of popup based on mouse click location
+.setHTML("<b>Province/Territory:</b> " + e.features[0].properties.PRENAME + "<br>" +
+"Population: " + e.features[0].properties.POP2021) //Use click event properties to write text for popup
+.addTo(map); //Show popup on map
+ });
 
 
 
