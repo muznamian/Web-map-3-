@@ -20,7 +20,15 @@ map.on('load', () => {
         'source': 'touristattractions',
         'paint': {
             'circle-radius': 6,
-            'circle-color': '#FF0000'
-        }
-    });
+            'circle-color': [ 
+                'step', // the steo expression will help to show the points in different colors based on the capacity of indviduals in specific areas 
+                {'get', 'capcity', } // uisng the get expression we can assign values to each toursit attraction location 
+                '#ADD8E6', // this color is assigned to any of the values < in the primary step 
+                450, '#FF0000' // the colors are assigned to each toursit attraction to connect to its capcity 
+                700, '#FFA500'
+                1000, '#FFFF00'
+                4000, '#ffc00'
+                1,500,0000, '#00008B']
+        }, 
+        'filter': ('>=', ('get',  'cacpity'), 1000  });
 });
