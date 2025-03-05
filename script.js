@@ -19,7 +19,12 @@ map.on('load', () => {
         'type': 'circle',
         'source': 'touristattractions',
         'paint': {
-            'circle-radius': 6,
+            'circle-radius': [
+                'interpolate', // to help move the images maximize and minimize 
+                ['linear'], // the process of linear 
+                ['zoom'] // the zoom expression will change as we pan in and out 
+                12, 4, // when zoom is 12 ( or less), radius will be the 4px 
+                10, ['/',['get', 'capcity'], 15// when zoom is 10 ( or greater) radius will be 15px//]
             'circle-color': [ 
                 'step', // the steo expression will help to show the points in different colors based on the capacity of indviduals in specific areas 
                 {'get', 'capcity', } // uisng the get expression we can assign values to each toursit attraction location 
