@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoibXV6bmFtaWFuIiwiYSI6ImNtNXBsc2xjcDAyaWkybm9wZXFuMjNzMTQifQ.0ATJsQJDSlSrpNrQpdMq0Q';
+e mapboxgl.accessToken = 'pk.eyJ1IjoibXV6bmFtaWFuIiwiYSI6ImNtNXBsc2xjcDAyaWkybm9wZXFuMjNzMTQifQ.0ATJsQJDSlSrpNrQpdMq0Q';
 const map = new mapboxgl.Map({
     container: "my-map", // was important to correct the ID name (had it as 'my-map 3' but changed to 'my-map')- the html would not work with spaces 
     style: "mapbox://styles/muznamian/cm7uod8ri00du01sagvvh78i8",
@@ -53,11 +53,11 @@ map.setFilter("location-points", ['==', ['get', 'PRUID'], '']); //Let thw filter
 
 
 map.on('click', ''location-points', (e) => {
-new mapboxgl.Popup() //Declare new popup object on each click
-.setLngLat(e.lngLat) //Use method to set coordinates of popup based on mouse click location
+new mapboxgl.Popup() //there will be a new popup object on each click
+.setLngLat(e.lngLat) //I can use this to set the coordinates of popup based on where the mouse click location occurs 
 .setHTML("<b>Province/Territory:</b> " + e.features[0].properties.PRENAME + "<br>" +
-"Population: " + e.features[0].properties.POP2021) //Use click event properties to write text for popup
-.addTo(map); //Show popup on map
+"Population: " + e.features[0].properties.POP2021) //Use this part to click event properties to write text for popup part 
+.addTo(map); //Show the popup on map
  });
 
 
