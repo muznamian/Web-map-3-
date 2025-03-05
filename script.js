@@ -33,6 +33,7 @@ map.on('load', () => {
                 700, '#FFA500'
                 1000, '#FFFF00'
                 4000, '#ffc00'
+                39,150, '#CBC3E3'
                 1,500,0000, '#00008B']
 'filter': ('>=', ('get',  'cacpity'), 1000  });
     // Add a simple click event into the map 
@@ -42,12 +43,12 @@ map.on('load', () => {
     
 // Add a pop-up on the click event for it to show on the map 
 // map.on('mouseenter', ''location-points', () => {
-//     map.getCanvas().style.cursor = 'pointer'; //Switch cursor to pointer when mouse is over provterr-fill layer
+//     map.getCanvas().style.cursor = 'pointer'; //Switch cursor to pointer when mouse is over location points layer
 // });
 
 // map.on('mouseleave', '', () => {
-//     map.getCanvas().style.cursor = ''; //Switch cursor back when mouse leaves provterr-fill layer
-//     map.setFilter("provterr-hl", ['==', ['get', 'PRUID'], '']); //Reset filter for highlighted layer after mouse leaves feature
+//     map.getCanvas().style.cursor = ''; //Switch cursor back when mouse leaves location points layer
+//     map.setFilter("location-points", ['==', ['get', 'PRUID'], '']); //Let thw filter reset the highlighted layer when mouse leaves feature
 // });
 
 
