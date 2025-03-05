@@ -34,7 +34,7 @@ map.on('load', () => {
                 1000, '#FFA500'// Bay Wellington Tower 
                 4000, '#C04000'// the ROM 
                 39,150, '#90EE90'// the rogers centre 
-                1,500,0000, '#D3D3D3']// nathans philip square 
+                1,500,000, '#D3D3D3']// nathans philip square 
 'filter': ('>=', ('get',  'cacpity'), 1000  });
     // Add a simple click event into the map 
     map.on ('click', 'location-points', (e)=> (
