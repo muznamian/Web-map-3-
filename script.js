@@ -29,12 +29,12 @@ map.on('load', () => {
                 'step', // the step expression will help to show the points in different colors based on the capacity of indviduals in specific areas 
                 {'get', 'capcity', } // uisng the get expression we can assign values to each toursit attraction location 
                 '#ADD8E6', // this color is assigned to any of the values < in the primary step 
-                450, '#FF0000' // the colors are assigned to each toursit attraction to connect to its capcity 
-                700, '#FFA500'
-                1000, '#FFFF00'
-                4000, '#ffc00'
-                39,150, '#CBC3E3'
-                1,500,0000, '#00008B']
+                450, '#FFCCCB' // The AGO  the colors are assigned to each toursit attraction to connect to its capcity 
+                700, '#FF0000'// Cn tower 
+                1000, '#FFA500'// Bay Wellington Tower 
+                4000, '#C04000'// the ROM 
+                39,150, '#90EE90'// the rogers centre 
+                1,500,0000, '#D3D3D3']// nathans philip square 
 'filter': ('>=', ('get',  'cacpity'), 1000  });
     // Add a simple click event into the map 
     map.on ('click', 'location-points', (e)=> (
