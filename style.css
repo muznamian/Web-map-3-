@@ -9,7 +9,7 @@
 border-radius: 50%; / |* it has a curvature added so the border appears a little bit ciruclar shaped 
 height: 8px;
 margin-right: 7px; /* the position of the circles*/}
-/* Now I want too add a color in each child of the legend*/
+/* Now I want too add a color in each population of the legend*/
 .legend div:nth-population(2)span{
     background-color: #FFCCCB;/* the background color for each figure*/
 }
