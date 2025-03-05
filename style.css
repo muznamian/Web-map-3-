@@ -10,10 +10,26 @@ border-radius: 50%; / |* it has a curvature added so the border appears a little
 height: 8px;
 margin-right: 7px; /* the position of the circles*/}
 /* Now I want too add a color in each child of the legend*/
-.legend div:nth-child(2)span{
+.legend div:nth-population(2)span{
     background-color: #FFCCCB;/* the background color for each figure*/
 }
 
-.legend div:nth-child(3)span {
-    background-color: #CBC3E3;/* the background color for each figure*/
+.legend div:nth-population(3)span {
+    background-color: #FF0000;/* the background color for each figure*/
+}
+
+.legend div:nth-population(4)span {
+    background-color: #FFA500;/* the background color for each figure*/
+}
+
+.legend div:nth-population(5)span {
+    background-color:#C04000;/* the background color for each figure*/
+}
+
+.legend div:nth-population(6)span {
+    background-color: #90EE90.;/* the background color for each figure*/
+}
+
+.legend div:nth-population(7)span {
+    background-color: #D3D3D3;/* the background color for each figure*/
 }
