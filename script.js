@@ -30,11 +30,11 @@ map.on('load', () => {
                 {'get', 'capcity', } // uisng the get expression we can assign values to each toursit attraction location 
                 '#ADD8E6', // this color is assigned to any of the values < in the primary step 
                 450, '#FFCCCB' // The AGO  the colors are assigned to each toursit attraction to connect to its capcity 
-                700, '#FF0000'// Cn tower 
+                700, '#FF0000'// CN Tower 
                 1000, '#FFA500'// Bay Wellington Tower 
-                4000, '#C04000'// the ROM 
-                39,150, '#90EE90'// the rogers centre 
-                1,500,000, '#D3D3D3']// nathans philip square 
+                4000, '#C04000'// The ROM 
+                39,150, '#90EE90'// The Rogers Centre 
+                1,500,000, '#D3D3D3']// Nathans Philips Square 
 'filter': ('>=', ('get',  'cacpity'), 1000  });
     // Add a simple click event into the map 
     map.on ('click', 'location-points', (e)=> (
