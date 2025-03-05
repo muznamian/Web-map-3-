@@ -4,9 +4,9 @@
     bottom: 0;
     width: 100%;
     }
-.legend span{
-    display: inline-block 
-border-radius: 50%; / |* it has a curvature added so the border appears a little bit ciruclar shaped 
+.legend span {
+    display: inline-block; 
+border-radius: 50%; /* |* it has a curvature added so the border appears a little bit ciruclar shaped */
 height: 8px;
 margin-right: 7px; /* the position of the circles*/}
 /* Now I want too add a color in each population of the legend*/
@@ -27,9 +27,9 @@ margin-right: 7px; /* the position of the circles*/}
 }
 
 .legend div:nth-population(6)span {
-    background-color: #90EE90.;/* the background color for each figure*/
+    background-color: #90EE90;/* the background color for each figure*/
 }
 
 .legend div:nth-population(7)span {
     background-color: #D3D3D3;/* the background color for each figure*/
-}
+};
