@@ -8,44 +8,45 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.4/mapbox-gl.css'
     rel='stylesheet' />
     <link rel="stylesheet" href="style.css">
-
-
+ <!-- mapbox geocoder plugin -->
+ <script
+ src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet"
+ href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.3/mapbox-gl-geocoder.css"
+ type="text/css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!--Map Container-->
-    <div id="my-map 3" class="map-container"></div>
+    <div id="my-map" class="map-container"></div>
     <script src="script.js"></script>
+ <!-- NAVIGATION ELEMENTS -->
+ <div class='map-search-container'>
+    <label class="option-label" for="geocoder">Search for a specific location</label>
+    <div id="geocoder" class="geocoder"></div>
+    <button type="button" class="btn btn-primary btn-sm" id="returnbutton">Return to full extent</button>
+ 
+ <!-- LEGEND -->
+    <div id='location-points' class='legend'>
+        <h4 style= "text-align: center; font-style: normal; font-size: large;font-family: Georgia"> The Population Capacity for Tourist Attractions in Toronto</h4> 
 
-    <script src="script-expressions.js"></script>
-    <script src="script-events.js"></script> 
+        <div><span></span>Hockey Hall of Fame: 300</div> 
 
+        <div><span></span>The AGO: 450</div>
 
-    <!--Interactivity-->
-    <div class = 'map container'
-       <label class="location-points" for="layercheck">Filter map view</label>
+        <div><span></span>The CN Tower: 700</div>
 
- <!-- Checkbox to show/hide layer -->
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="location-points" checked>
-            <label class="form-check-label" for="layercheck">Show layer</label>
-        </div>
-  <!-- Checkbox to show/hide legend -->
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="location-points">
-            <label class="form-check-label" for="legendcheck">Show legend</label>
-        </div>
+        <div><span></span>Toronto City Hall: 1000</div>
 
-<!--LEGEND-->
-<div id= 'popn-legend' class='legend'>
-    <h4>Tourist Attractions in Toronto and the Capacity of the Location</h4>
-    <div><span></span> Art Gallery of Ontario 450</div>
-    <div><span></span> The CN Tower 700</div>
-    <div><span></span> Bay Wellington Tower 1000</div>
-    <div><span></span> The ROM 4000</div>
-    <div><span></span> The Rogers Centre 39,150</div>
-     <div><span></span> Nathan Philips Square 1,500,000</div>
-</div> 
+        <div><span></span>The ROM: 4000</div>
+
+        <div><span></span>The Rogers Centre:49286</div>
+    </div>
+
+     
+
     
 </body>
 
