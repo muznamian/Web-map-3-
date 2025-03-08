@@ -21,7 +21,7 @@
     box-shadow: 0 0 10px rgba(189, 151, 27, 0.959);
     max-width: 200px;
 }
-
+// the details about the legend for the map
 .legend h4 {
     margin: 0 0 15px;
 }
